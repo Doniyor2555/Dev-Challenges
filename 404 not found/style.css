@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  padding: 40px 0 0 77px;
+}
+
+.header_subheader {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase; 
+  color: #333333;
+}
+
+.not_found{
+  padding-top: 200px;
+  padding-left: 77px;
+  display: flex;
+}
+
+.img {
+  width: 539px;
+  height: 414px;
+  object-fit: cover;
+}
+
+.subtitles { 
+  margin-left: 118.78px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 95px;
+  color: #333333;
+}
+
+.paragraph {
+  width: 400px;
+  min-height: 108px;
+  font-family: 'Space Mono';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #4F4F4F;
+  margin-top: 36px;
+}
+
+.btn {
+  width: 216px;
+  height: 68px;
+  background: #333333;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  margin-top: 64px;
+}
