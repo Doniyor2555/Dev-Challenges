@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header h1{
+  font-family: 'PT Serif', serif;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.who-we-are{
+  width: 40%;
+
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 4rem 10rem;
+}
+
+.member {
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.member img {
+  width: 100%;
+}
+
+.member:nth-child(3n + 2) {
+  margin-bottom: 0;
+  margin-top: 5rem;
+}
+
+.member:nth-child(5) {
+  margin-top: 5rem;
+}
+
+
+.member:first-child:after{
+  content: 'Product owner';
+  padding-bottom: 1rem;
+}
+.member:nth-child(2)::after{
+  content: 'Art director';
+}
+.member:nth-child(3)::after{
+  content: 'Tech Lead';
+}
+.member:nth-child(4)::after{
+  content: 'UX Designer';
+}
+.member:nth-child(5)::after,.member:nth-child(6)::after {
+  content: 'Developper';
+}
+
+.member::after{
+  color: black;
+  font-family: 'PT Serif', serif;
+  position: absolute;
+  right: -4rem;
+  top: 3rem;
+  transform: rotate(90deg);
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #A9A9A9;
+}
+
+@media screen and (max-width: 768px) {
+  .header{
+      flex-direction: column;
+      gap: 2rem;
+      align-items: flex-start;
+  }
+  .who-we-are{
+      width: 90%;
+  
+  }
+  .bodyContainer{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      width: 85%;
+      padding: 4rem 0;
+      margin: auto;
+      /* margin-right: ; */
+  }
+  .member:nth-child(2n + 2){
+      margin-bottom: 0;
+      margin-top: 5rem;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+    
+  .member:nth-child(3n + 2){
+      margin-bottom: 0;
+      margin-top: 5rem;
+  }
+}
+
+@media (max-width: 320px) { 
+  .about {
+      padding: 2rem 1rem;
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .member:first-child:after{
+    content: 'Product owner';
+    font-size: 10px;
+    padding: 0;
+    padding-right: 40px;
+  }
+  .name {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .member:nth-child(2):after{
+    font-size: 10px;
+    padding: 0;
+    padding-right: 55px;
+  }
+  .member:nth-child(3):after{
+    font-size: 10px;
+    padding-right: 55px;
+  }
+  .member:nth-child(4):after{
+    font-size: 10px;
+    padding-right: 50px;
+  }
+  .member:nth-child(5) {
+    margin-top: 0px;
+  }
+  .member:nth-child(5)::after{
+    font-size: 10px;
+    padding-right: 50px;
+  } 
+  .member:nth-child(6)::after{
+    font-size: 10px;
+    padding-right: 55px;
+  }
+}
+
