@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@500&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;700&family=Space+Mono:wght@400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -64,4 +65,105 @@ h1 {
   color: #FFFFFF;
   border: none;
   margin-top: 64px;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:hover {
+  width: 230px;
+  box-shadow: 3px 3px 5px #333333;
+  transition: all 0.5s ease-in;
+}
+
+.footer {
+  padding-top: 200px;
+}
+
+.author {
+  position: absolute;
+  left: 577px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #BDBDBD;
+}
+
+.author a {
+  font-family: 'Montserrat';
+  color: #BDBDBD;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .img {
+    width: 470px; 
+    object-fit: cover;
+  }
+  .paragraph {
+    width: 320px;
+    font-size: 19px;
+  }
+  .subtitles {
+    margin-left: 91.78px;
+  }
+}
+
+@media (max-width: 576px) {
+  .not_found {
+    position: relative;
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+  } 
+  .img {
+    width: 286px;
+    height: 220px;
+    position: relative;
+    left: 35%;
+    transform: translateX(-50%);
+  }
+  h1 {
+    font-size: 20px;
+    line-height: 31px;
+    margin-left: -100%;
+    margin-top: 60px;
+  }
+  .paragraph {
+    width: 250px;
+    margin-left: -100%;
+    font-size: 15px;
+    line-height: 27px;
+  }
+  .btn {
+    width: 200px;
+    height: 50px;
+    margin-left: -100%;
+    margin-top: 66px;
+  }
+  .btn:hover {
+    width: 200px;
+    box-shadow: none;
+  }
+  .footer {
+    padding-top: 50px;
+    font-size: 10px;
+  }
+  .author {
+    position: relative;
+    top: -30px;
+    left: 20px;
+    font-size: 10px;
+  }
+  body {
+    overflow-x: hidden;
+  }
 }
